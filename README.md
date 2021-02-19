@@ -1,1 +1,1 @@
-# IPWT-Lab-Exercises
+# IPWT Lab Exercises
