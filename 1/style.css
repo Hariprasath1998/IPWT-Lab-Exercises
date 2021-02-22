@@ -1,41 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: trajan;
+    src: url('Trajan pro.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #f0f0f0;
 }
 
-.navbar {
-    background-color: #334;
-    overflow: auto;
+header {
+    background-color: #101010;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
     display: flex;
+    align-items: center;
 }
 
-.navbar a {
-    color: #f2f2f2;
-    padding: 14px 16px;
+.name h1 {
+    margin: 0;
+    font-size: 3vw;
+}
+
+#links {
+    margin-left: auto;
+}
+
+#links a {
+    margin: 0 0.5vw;
+    color: white;
     text-decoration: none;
-    font-size: 20px;
-    background-color: #334;
-    transition: background-color 0.15s ease;
+    font-size: 1.5vw;
 }
 
-.navbar a:hover {
-    background-color: #445;
+@media only screen and (max-width: 660px) {
+    .container {
+        width: 95%;
+    }
+}
+
+#showcase {
+    position: relative;
 }
 
 .cover {
-    position: relative;
+    margin: auto;
+}
+
+.cover img {
+    width: 100%;
+}
+
+.tagline {
+    color: #f4f4f4;
+    position: absolute;
+    top: 90%;
+    width: 100%;
     text-align: center;
+    font-size: 3.2vw;
+    font-family: trajan;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+#portfolio {
+    text-align: center;
+    padding: 0 5%;
 }
 
-.covertext {
-    position: relative;
-    font-size: 50px;
-    margin-top: -6%;
-    color: #f9f9f9;
+#portfolio div {
+    font-size: 4vw;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 2%;
+}
+
+.works div {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(15, 10, 10, 0.03);
+    border-radius: 5%;
+}
+
+.works div img {
+    max-height: 100%;
+    min-width: auto;
 }
