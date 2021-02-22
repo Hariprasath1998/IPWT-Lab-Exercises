@@ -14,6 +14,7 @@ body {
     margin: 0;
     line-height: 1.5;
     background-color: #f0f0f0;
+    padding-bottom: 50px;
 }
 
 header {
@@ -44,6 +45,10 @@ header {
     font-size: 1.5vw;
 }
 
+#links a:hover {
+    color: yellow;
+}
+
 @media only screen and (max-width: 660px) {
     .container {
         width: 95%;
@@ -51,11 +56,12 @@ header {
 }
 
 #showcase {
+    margin: 0;
     position: relative;
 }
 
 .cover {
-    margin: auto;
+    margin: 0;
 }
 
 .cover img {
@@ -63,6 +69,7 @@ header {
 }
 
 .tagline {
+    margin: 0;
     color: #f4f4f4;
     position: absolute;
     top: 90%;
@@ -72,12 +79,9 @@ header {
     font-family: trajan;
 }
 
-#portfolio {
+.title {
     text-align: center;
     padding: 0 5%;
-}
-
-#portfolio div {
     font-size: 4vw;
 }
 
@@ -88,7 +92,7 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.works {
+.flexcontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -100,9 +104,39 @@ hr {
     height: 150px;
     background-color: rgba(15, 10, 10, 0.03);
     border-radius: 5%;
+    transition: all ease 0.5s;
 }
 
 .works div img {
     max-height: 100%;
     min-width: auto;
+}
+
+.works div:hover {
+    background-color: rgba(15, 10, 0, 0.05);
+    opacity: 50%;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.reviews div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(15, 10, 70, 0.05);
+    border-radius: 5%;
+}
+
+.reviews div p {
+    padding: 5px;
+    margin: auto;
+}
+
+.reviews div span {
+    padding: 5px;
+    align-self: flex-end;
 }
